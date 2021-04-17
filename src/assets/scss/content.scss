@@ -1,0 +1,40 @@
+.content {
+  display: flex;
+  font-size: 16px;
+  background: rgb(229, 248, 210);
+
+  .noteTitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .noteList {
+    list-style: decimal;
+    letter-spacing: 0.4px;
+    line-height: 1.5;
+
+    .vueKey {
+      font-weight: bold;
+      background: rgb(250, 227, 187);
+      color: rgb(255, 72, 0);
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+
+    li {
+      margin-bottom: 16px;
+      word-wrap: break-word;
+    }
+  }
+
+  &__leftBlock {
+    width: 50%;
+    padding: 20px;
+  }
+
+  &__rightBlock {
+    width: 50%;
+    padding: 20px;
+  }
+}
