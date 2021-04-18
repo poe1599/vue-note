@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import Todo from '../views/Todo.vue';
 import Counter from '../views/Counter.vue';
 import Form from '../views/Form.vue';
+import Form2 from '../views/Form2.vue';
 import VBind from '../views/v-bind.vue';
 import VFor from '../views/v-for.vue';
 import Watch from '../views/watch.vue';
@@ -26,6 +27,11 @@ const routes = [
     path: '/form',
     name: 'Form',
     component: Form,
+  },
+  {
+    path: '/form2',
+    name: 'Form2',
+    component: Form2,
   },
   {
     path: '/v-bind',

@@ -6,6 +6,7 @@
       <router-link class="nav__item" to="/">Todo</router-link>
       <router-link class="nav__item" to="/counter">Counter</router-link>
       <router-link class="nav__item" to="/form">Form</router-link>
+      <router-link class="nav__item" to="/form2">Form2</router-link>
       <router-link class="nav__item" to="/v-bind">v-bind</router-link>
       <router-link class="nav__item" to="/v-for">v-for</router-link>
       <router-link class="nav__item" to="/watch">watch</router-link>

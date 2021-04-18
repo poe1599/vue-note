@@ -27,7 +27,7 @@
             使其不可被選取
           </li>
           <li>
-            多欄選一, <span class="vueKey">v-model</span>綁定的<span class="vueKey">data</span>
+            單選欄, <span class="vueKey">v-model</span>綁定的<span class="vueKey">data</span>
             為陣列, 且須加上<span class="vueKey">multiple</span>
           </li>
           <li>
@@ -74,7 +74,7 @@
               <option>B</option>
               <option>C</option>
             </select><br><br>
-            <h2 class="labeltag">多欄選一 : {{multiSelected}}</h2><br><br>
+            <h2 class="labeltag">多選欄 : {{multiSelected}}</h2><br><br>
             <select v-model="multiSelected" multiple style="width:100px">
               <option value="說">說</option>
               <option value="學">學</option>

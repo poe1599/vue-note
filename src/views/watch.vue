@@ -44,22 +44,22 @@
     <div class="content__rightBlock">
       numA:
       <button @click="plusOne('numA')">+</button>
-      <input class="numInput" v-model="numA">
+      <input class="numInput" type="text" v-model.number="numA">
       <button @click="minusOne('numA')">-</button><br><br>
       numB:
       <button @click="plusOne('numB')">+</button>
-      <input class="numInput" v-model="numB">
+      <input class="numInput" type="text" v-model.number="numB">
       <button @click="minusOne('numB')">-</button><br><br>
       numC:
       <button @click="plusOne('numC')">+</button>
-      <input class="numInput" v-model="numC">
+      <input class="numInput" type="text" v-model.number="numC">
       <button @click="minusOne('numC')">-</button><br><br>
       computed (numA + numB + numC) : {{totalNum}} <br><br>
       <div class="box" :style="{background:BgColor}">{{BgColor}}</div>
       <br>
       <div class="msgBox">
-        <span style="color:red;">New msg:</span><br>
-        <span v-html="msg"></span>
+        <span style="color:red;" v-show="msg">New msg:</span><br>
+        <span v-html="msg" style="line-height:1.5;"></span>
       </div>
     </div>
   </div>
@@ -93,17 +93,14 @@ export default {
   },
   watch: {
     numA(value, oldValue) {
-      this.numA = +this.numA;
       this.msg = `Now numA is ${value}, last numA is ${oldValue}<br>${this.msg}`;
     },
     numB: [
       function toNumB(value, oldValue) {
-        this.numB = +this.numB;
         this.msg = `Now numB is ${value}, last numB is ${oldValue}<br>${this.msg}`;
       }],
     numC: [
       function toNumC(value, oldValue) {
-        this.numC = +this.numC;
         this.msg = `Now numC is ${value}, last numC is ${oldValue}<br>${this.msg}`;
       },
     ],
