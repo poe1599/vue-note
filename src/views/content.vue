@@ -1,7 +1,7 @@
 <template>
   <div class="content">
-    <div class="leftBolock"></div>
-    <div class="rightBlock"></div>
+    <div class="content__leftBlock"></div>
+    <div class="content__rightBlock"></div>
   </div>
 </template>
 <script>

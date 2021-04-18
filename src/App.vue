@@ -7,6 +7,8 @@
       <router-link class="nav__item" to="/counter">Counter</router-link>
       <router-link class="nav__item" to="/form">Form</router-link>
       <router-link class="nav__item" to="/v-bind">v-bind</router-link>
+      <router-link class="nav__item" to="/v-for">v-for</router-link>
+      <router-link class="nav__item" to="/watch">watch</router-link>
       <router-link class="nav__item" to="/computer">Computer</router-link>
     </div>
     <router-view class="main"/>

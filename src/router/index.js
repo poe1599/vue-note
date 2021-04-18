@@ -4,6 +4,8 @@ import Todo from '../views/Todo.vue';
 import Counter from '../views/Counter.vue';
 import Form from '../views/Form.vue';
 import VBind from '../views/v-bind.vue';
+import VFor from '../views/v-for.vue';
+import Watch from '../views/watch.vue';
 import Computer from '../views/Computer.vue';
 // import Home from '../views/Home.vue';
 
@@ -29,6 +31,16 @@ const routes = [
     path: '/v-bind',
     name: 'VBind',
     component: VBind,
+  },
+  {
+    path: '/v-for',
+    name: 'VFor',
+    component: VFor,
+  },
+  {
+    path: '/watch',
+    name: 'Watch',
+    component: Watch,
   },
   {
     path: '/computer',
