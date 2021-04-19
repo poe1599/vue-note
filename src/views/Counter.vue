@@ -54,6 +54,7 @@ export default {
 <style lang="scss" scoped>
 
 .counter {
+  width: 100%;
   display: flex;
   padding: 50px;
   font-size: 16px;

@@ -1,5 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+
+import Readme from '../views/readme.vue';
 import Todo from '../views/Todo.vue';
 import Counter from '../views/Counter.vue';
 import Form from '../views/Form.vue';
@@ -7,6 +9,12 @@ import Form2 from '../views/Form2.vue';
 import VBind from '../views/v-bind.vue';
 import VFor from '../views/v-for.vue';
 import Watch from '../views/watch.vue';
+import Modifier from '../views/modifier.vue';
+import LifeCycle from '../views/LifeCycle.vue';
+import Props from '../views/props.vue';
+import Slot from '../views/slot.vue';
+import Filter from '../views/filter.vue';
+import Directive from '../views/directive.vue';
 import Computer from '../views/Computer.vue';
 // import Home from '../views/Home.vue';
 
@@ -14,9 +22,14 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
+    path: '/todo',
     name: 'Todo',
     component: Todo,
+  },
+  {
+    path: '/',
+    name: 'Readme',
+    component: Readme,
   },
   {
     path: '/counter',
@@ -42,6 +55,36 @@ const routes = [
     path: '/v-for',
     name: 'VFor',
     component: VFor,
+  },
+  {
+    path: '/modifier',
+    name: 'modifier',
+    component: Modifier,
+  },
+  {
+    path: '/LifeCycle',
+    name: 'LifeCycle',
+    component: LifeCycle,
+  },
+  {
+    path: '/Props',
+    name: 'Props',
+    component: Props,
+  },
+  {
+    path: '/slot',
+    name: 'slot',
+    component: Slot,
+  },
+  {
+    path: '/filter',
+    name: 'filter',
+    component: Filter,
+  },
+  {
+    path: '/directive',
+    name: 'directive',
+    component: Directive,
   },
   {
     path: '/watch',

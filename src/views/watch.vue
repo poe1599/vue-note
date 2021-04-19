@@ -12,6 +12,10 @@
           <span class="vueKey">methods</span>中被定義的function
         </li>
         <li>
+          <span class="vueKey">watch</span>不只能監聽對應的<span class="vueKey">data</span>,
+          也可以對<span class="vueKey">computed</span>做監聽
+        </li>
+        <li>
           <span class="vueKey">watch</span>中定義的function包含兩個參數, 分別為現在與改變前, 例如:
           變數: function (val, oldVal) {}
         </li>

@@ -3,13 +3,20 @@
     <div class="nav">
       <!-- <router-link class="nav__item" to="/">Home</router-link> -->
       <!-- <router-link class="nav__item" to="/about">About</router-link> -->
-      <router-link class="nav__item" to="/">Todo</router-link>
+      <router-link class="nav__item" to="/">Read me</router-link>
+      <router-link class="nav__item" to="/todo">Todo</router-link>
       <router-link class="nav__item" to="/counter">Counter</router-link>
       <router-link class="nav__item" to="/form">Form</router-link>
       <router-link class="nav__item" to="/form2">Form2</router-link>
       <router-link class="nav__item" to="/v-bind">v-bind</router-link>
       <router-link class="nav__item" to="/v-for">v-for</router-link>
       <router-link class="nav__item" to="/watch">watch</router-link>
+      <router-link class="nav__item" to="/modifier">modifier</router-link>
+      <router-link class="nav__item" to="/LifeCycle">LifeCycle</router-link>
+      <router-link class="nav__item" to="/Props">Props</router-link>
+      <router-link class="nav__item" to="/slot">slot</router-link>
+      <router-link class="nav__item" to="/filter">filter</router-link>
+      <router-link class="nav__item" to="/directive">directive</router-link>
       <router-link class="nav__item" to="/computer">Computer</router-link>
     </div>
     <router-view class="main"/>
