@@ -17,6 +17,7 @@
       <router-link class="nav__item" to="/slot">slot</router-link>
       <router-link class="nav__item" to="/filter">filter</router-link>
       <router-link class="nav__item" to="/directive">directive</router-link>
+      <router-link class="nav__item" to="/vue-router">vue router</router-link>
       <router-link class="nav__item" to="/computer">Computer</router-link>
     </div>
     <router-view class="main"/>
