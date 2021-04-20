@@ -16,6 +16,7 @@ import Slot from '../views/slot.vue';
 import Filter from '../views/filter.vue';
 import Directive from '../views/directive.vue';
 import vueRouter from '../views/vue-router.vue';
+import myVuex from '../views/myVuex.vue';
 import Computer from '../views/Computer.vue';
 // import Home from '../views/Home.vue';
 
@@ -91,6 +92,11 @@ const routes = [
     path: '/vue-router',
     name: 'VueRouter',
     component: vueRouter,
+  },
+  {
+    path: '/myVuex',
+    name: 'myVuex',
+    component: myVuex,
   },
   {
     path: '/watch',

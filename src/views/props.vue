@@ -37,19 +37,33 @@
         </a></li>
       </ul>
     </div>
-    <div class="content__rightBlock"></div>
+    <div class="content__rightBlock">
+      <h1 class="noteTitle">Props and Emit</h1>
+      <p>Parent: {{parentText}}</p>
+      <input type="text" name="" id="" v-model="parentText"><br><br>
+      <p>傳遞props</p>
+      <Child :parentText="parentText" @changeChildValue="setParentValue" />
+      <p>不傳遞props</p>
+      <Child @changeChildValue="setParentValue" />
+    </div>
   </div>
 </template>
+
 <script>
+import Child from '../components/Child.vue';
+
 export default {
+  components: { Child },
   name: 'props',
   data() {
     return {
-
+      parentText: '傳下去',
     };
   },
   methods: {
-
+    setParentValue(value) {
+      this.parentText = value;
+    },
   },
 
 };
